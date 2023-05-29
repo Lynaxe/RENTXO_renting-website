@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Bodoni MT;
+}
+body{
+    background: rgb(19,136,133);
+    background: -moz-linear-gradient(80deg, rgba(19,136,133,1) 5%, rgba(58,127,170,1) 43%, rgba(0,140,184,1) 69%, rgba(67,83,83,1) 100%);
+    background: -webkit-linear-gradient(80deg, rgba(19,136,133,1) 5%, #3a7faa 43%, rgba(0,140,184,1) 69%, rgba(67,83,83,1) 100%);
+    background: linear-gradient(80deg, rgba(19,136,133,1) 5%, rgba(58,127,170,1) 43%, rgba(0,140,184,1) 69%, rgba(67,83,83,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#138885",endColorstr="#435353",GradientType=1);
+    height: 100vh;
+    width: 100%;
+    Overflow-x: hidden;
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:30px 10%  ;
+}
+.logo {
+    color:beige ;
+    font-family:Roboto Slab ;
+    font-size:40px;
+
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding:0px 20px;
+}
+nav ul li a {
+color:beige;
+text-decoration: none;
+font-weight: bold;
+font-family: Bodoni MT;
+font-size: 20px;
+transition: all 0.3s ease 0s;
+}
+nav ul li a:hover{
+    cursor:pointer;
+    color:black;
+    border-bottom: 0.15em ;
+    scroll-behavior: smooth solid black;
+    transition: .4s;
+}
+
+.hero{
+    width:100%;
+}
+.hero .row{
+    width:90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:50px;
+    padding-bottom: 70px;
+    margin:auto;
+}
+.hero .row .left-sec{
+    width:40% ;
+    margin-top: -300px;
+    margin-left: 25px;
+    color: white;
+}
+.hero .row .left-sec h2{
+    font-size:60px;
+    color:#2A3990;
+    text-transform: capitalize;
+    font-family: Bahnschrift SemiBold;
+
+}
+.hero .row .left-sec  p{
+    font-family:Bahnschrift Light ;
+    font-size: 21px;
+}
+
+.hero .row .left-sec h2 span{
+    color: white;
+    font-size: 60px;
+    margin-left: 50px;
+    font-family:Bahnschrift Light ;
+}
+.hero .right-sec{
+    width: 100px;
+    padding-top: 200px;
+    padding-bottom: 450px;
+    padding-right: 310px;
+}
+.hero .right-sec img{
+    max-width :1000px;
+    margin: -300px;
+    margin-right: -100px;
+    min-height: 7rem;
+    display: flex;
+    align-items: right;
+}
+.hero .new-cars{
+    text-align: center;
+    margin: -180px;
+}
+.hero .new-cars span{
+    font-weight: 500px;
+    color:#2A3990;
+    font-size: 40px;
+    font-family:Bahnschrift Light  ;
+}
+.hero .new-cars h2{
+    font: size 20px;;
+    font-family: Bahnschrift SemiBold;
+}
+.hero .new-cars h3{
+    font-size: 20px;
+    font-family:Bahnschrift Light  ;
+    color: white;
+}
+.cars-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+
+}
+
+.cars-container .box  img{
+    size: -500px;
+    width: 450px;
+    margin-top: 200px;
+    margin-bottom:20px;
+    display:flex;
+    object-fit: cover;
+}
+.cars-container .box{
+    flex: 1 1 17rem;
+    position:relative;
+    height: -10px;
+    border-radius:0.5rem ;
+    padding-left: 65px;
+    padding-right: 40px;
+    margin: -50px;
+    margin-left: 30px;
+    margin-right: -30px;
+    margin-bottom: -30px;
+}
+.cars-container h2{
+    align-items: center;
+    color: white;
+}
+ .cars-container .box button{
+    display:flex ;
+    justify-content: left;
+    align-items:center;
+    position: relative;
+    box-sizing: border-box;
+    color:black;
+    background-color:white;
+    font-family: Bahnschrift Light ;
+    font-weight:400px ;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    padding:20px 40px;
+    transition: 0.5s;
+    font-size: 15px;
+}
+.cars-container .box button:hover{
+    background:var(--clr);
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 35px var(--clr);
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  .cars {
+    cursor: pointer;
+  }
+  
+  .cars:focus {
+    outline: none;
+  }
+  
+  .cars:target {
+    animation: scrollAnimation 1s;
+  }
+  
+  @keyframes scrollAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .blog{
+    text-align: center;
+    margin: 150px;
+  }
+  .blog span{
+    font-weight: 500px;
+    color:#2A3990;
+    font-size: 40px;
+    font-family:Bahnschrift Light  ;
+  }
+  .blog h2{
+    font-size:20px;
+    color: white;
+    font-family: Bahnschrift SemiBold;
+  }
+
+
+  .article-list {
+    color:#313437;
+    background-color:#fff;
+  }
+  
+  .article-list p {
+    color:#7d8285;
+  }
+  
+  .article-list h2 {
+    font-weight:bold;
+    margin-bottom:40px;
+    padding-top:40px;
+    color:inherit;
+  }
+  
+  @media (max-width:767px) {
+    .article-list h2 {
+      margin-bottom:25px;
+      padding-top:25px;
+      font-size:24px;
+    }
+  }
+
+
+
+
+.blog-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+    margin-top: 2rem;
+}
+.blog-container .box{
+  flex: 1 1 13rem;
+  padding: 20px;
+
+}
+.blog-container .box:hover{
+  background: yellow;
+
+}
+
+.footer{
+  background: rgb(34,103,103);
+  background: -moz-linear-gradient(80deg, rgba(34,103,103,1) 0%, rgba(74,172,204,1) 88%, rgba(54,71,81,1) 100%);
+  background: -webkit-linear-gradient(80deg, rgba(34,103,103,1) 0%, rgba(74,172,204,1) 88%, rgba(54,71,81,1) 100%);
+  background: linear-gradient(80deg, rgba(34,103,103,1) 0%, rgba(74,172,204,1) 88%, rgba(54,71,81,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#226767",endColorstr="#364751",GradientType=1);;
+  color: white;
+  border-top: 2px solid ;
+}
+
+.footer-container{
+  justify-content: space-between;
+  gap: 1rem;
+  display: flex;
+}
+.footer-container .logo{
+  margin-bottom: 1rem;
+  color: black;
+}
+.footer-container .logo a:hover{
+  color: black;
+}
+.footer-container .footer-box{
+flex-direction: column; 
+display: flex;
+color: white;
+}
+.social{
+  display: flex;
+  align-items: center;
+
+}
+.social a{
+  font-size: 24px;
+  color:black;
+  margin-right:1rem ;
+}
+.social a:hover{
+  color: red;
+
+}
+.footer-box h3{
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  font-size: 24px;
+}
+ .footer-box a,
+ .footer-box p{
+  margin-bottom: 10px;
+ }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.blog{
+  cursor: pointer;
+}
+
+.blog:focus {
+  outline: none;
+}
+
+.blog:target {
+  animation: scrollAnimation 1s;
+}
+
+@keyframes scrollAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
